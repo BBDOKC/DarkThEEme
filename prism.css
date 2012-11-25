@@ -1,0 +1,155 @@
+/**
+ * prism.js Dark theme for ExpressionEngine
+ * 
+ * @author Brian Mallett
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: hsl(44,45%,89%);
+	text-shadow: 0 -.1em .2em black;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+	background: hsl(0,0%,5%);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;	
+	border: .3em solid hsl(192,14%,40%);
+	border-radius: .5em;
+	box-shadow: 1px 1px .5em black inset;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .15em .2em .05em;
+	border-radius: .3em;
+	border: .13em solid hsl(30,20%,40%);
+	box-shadow: 1px 1px .3em -.1em black inset;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: hsl(30,20%,50%);
+}
+
+.token.punctuation {
+	opacity: .7;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+	color: hsl(46,53%,42%);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+	color: hsl(65,46%,31%);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: hsl(40, 90%, 60%);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: hsl(46,53%,57%);
+}
+
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.token.important {
+	font-weight: bold;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/* -----------------------------------------
+	Default EE styles	
+----------------------------------------- */
+
+.token.eetag,
+.token.keyword,
+.token.conditional,
+.token.eetag .token.operator {
+	color: hsl(18,68%,64%);
+}
+
+.token.eetag .token.bracket,
+.token.conditional .token.bracket {
+	color: hsl(6,49%,65%);
+	opacity: .7;
+}
+
+.token.eetag .token.tag_name .token.class {
+	color: hsl(304,22%,59%);
+}
+
+.token.eetag .token.exp {
+	color: hsl(6,49%,65%);
+}
+
+.token.eetag .token.method,
+.token.eetag .token.punctuation {
+	color: hsl(350,52%,82%);
+}
+
+.token.eetag .token.name {
+	color: hsl(35,67%,73%);
+}
+
+.token.eetag .token.value {
+	color: hsl(203,38%,73%);
+}
+
+.token.subject,
+.token.variable {
+	color: hsl(202,81%,67%);
+}
+
+.token.conditional .token.operator {
+	color: hsl(68,99%,30%);
+}
+
+.token.conditional .token.variable {
+	color: hsl(198,100%,34%);
+}

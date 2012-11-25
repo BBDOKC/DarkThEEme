@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<title>Prism Th{EE}m</title>
+	<!-- Partial theme used from: freehtml5templates.com -->
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/css3.css" />
+	<!-- PRISM STUFF -->
+	<script src="prism.js"></script>
+	<script src="lang.ee.js"></script>
+	<link rel="stylesheet" href="prism.css" />
+	<!-- /PRISM STUFF -->
+</head>
+<body>
+	<!--start container-->
+	<div id="container">
+		<!--start intro-->
+		<div id="intro">
+			<div class="group_bannner_right">
+				<img src="images/picture.png" width="550" height="316"  alt="baner">
+			</div>
+			<header class="group_bannner_left">
+				<hgroup>
+					<h1>Simple.Think. </h1>
+					<h2>"The little things are infinitely the most important."</h2>
+				</hgroup>
+			</header>
+		</div>
+		<!--end intro-->
+		<!--start holder-->
+		<div class="holder_content">
+			<section class="group">
+<pre class="language-ee">
+    <code>
+{exp:authenticate:login_form
+    auth_type="email"
+    username_field="email"
+    class="sixcol"
+    return="some/return/url"
+    {if segment_1}param="123"{/if}
+}
+    {if "total_global_items" > 0}
+    <div class="lists">
+        <h3>Authentication List</h3>
+        <ul class="bullets">
+        {global_list}
+            <li><a href="{link}">{list-item}</li>
+        {/global_list}
+        </ul>
+    </div>
+    {/if}
+	<div class="description">
+    	<p>This is an example of a simple descriptive paragraph...</p>
+    </div>
+	</code>
+</pre>
+			</section>
+		</div>
+		<!--end holder-->
+	</div>
+	<!--end container-->
+</body>
+</html>
